@@ -204,4 +204,20 @@ main{
     .nav-list.active{
         transform: translateX(100%);
     }
+
+    .slide, .slides, .images img{
+        height: 40vh;
+    }
+    .images img{
+        width: 100vw;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .container .cards{
+        flex-direction: column;
+        align-items: center;
+    }
+    .container .cards .card{
+        width: 80%;
+    }
 }
