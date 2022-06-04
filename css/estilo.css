@@ -8,6 +8,9 @@ section{
     justify-content: center;
     margin-top: 5rem;
 }
+body, html{
+    overflow-x: hidden;
+}
 /* ======================= HEADER ===================*/
 nav{
     width: 100%;
@@ -103,6 +106,10 @@ main{
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    text-align: center;
+}
+.container p{
+    width: 70%;
 }
 
 .container .title{
@@ -125,7 +132,8 @@ main{
 }
 
 .container .cards .card{
-    width: 30%;
+    width: 25%;
+    height: 45.625rem;
 }
 
 .container .cards .card img{
@@ -143,6 +151,10 @@ main{
     padding: 1rem;
     font-size: 1.2rem;
     align-items: center;
+}
+
+.container .cards .card p{
+    width: 100%;
 }
 
 .container .cards .card .date p {
@@ -164,6 +176,30 @@ main{
 
 .container .cards .card .date div i{
     color: #fff;
+}
+
+/*============= CONHEÇA ====================*/
+.cards .cont i{
+    border: 8px solid black;
+    padding: 2rem;
+    border-radius: 10px;
+    font-size: 7rem;
+    cursor: pointer;
+    margin-top: 2rem;
+    transition: all 0.3s;
+}
+
+.cards .cont i:nth-child(2n+1):hover{
+    background: #4ab60b;
+    border: 8px solid #4ab60b;
+}
+
+.container .cards .cont{
+    width: 30%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 
@@ -199,6 +235,7 @@ main{
         margin-left: 0;
         transform: translateX(200%);
         transition: 0.5s ease-in;
+        z-index: 999;
     }
 
     .nav-list.active{
@@ -224,8 +261,13 @@ main{
     }
 }
 
-@media (max-width: 700px){
+@media (max-width: 800px){
     .container .title{
         flex-direction: column;
+    }
+    .container .cards .card{
+        width: 60%;
+        margin-bottom: 5%;
+        margin-right: 5%;
     }
 }
