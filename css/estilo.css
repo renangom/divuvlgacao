@@ -294,6 +294,8 @@ main {
   width: 90%;
   outline: none;
   border: none;
+  border-radius: 10px;
+  padding: 1rem;
 }
 
 .fale-conosco .text1 h1 {
