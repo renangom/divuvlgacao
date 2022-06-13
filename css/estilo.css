@@ -45,7 +45,11 @@ nav {
   padding: 1.5rem 0;
   height: 10vh;
 }
-
+nav .logo img {
+  width: 200px;
+  height: 56px;
+  background-size: cover;
+}
 nav ul {
   display: flex;
 }
