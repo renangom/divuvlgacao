@@ -41,4 +41,4 @@ function slide(){
 setInterval(()=>{
     atual++
     slide()
-}, 3000)
+}, 7000)
